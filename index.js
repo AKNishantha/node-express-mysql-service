@@ -14,4 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/azurestudent',require('./routes/usersR'));
 
-app.listen(5000);// listen port
+const PORT = proces.env.PORT || 5000;
+app.listen(PORT, () =>{
+   console.log("Server listning on port", PORT);
+});
