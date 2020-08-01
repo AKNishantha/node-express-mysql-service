@@ -17,7 +17,7 @@ app.use('/azurestudent',require('./routes/usersR'));
 
 //port cjhangin
 
-const PORT = proces.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>{
    console.log("Server listning on port", PORT);
 });
